@@ -1,5 +1,19 @@
+/* Site stuffs *
+COLORS:
+#C7D5E2
+#737081
+#183B75
+#32637B
+#3F978D
+FONTS:
+font-family: "Futura", sans-serif;
+*/
+
+/* ********** TAG SELECTORS ********** */
+
 body {
   background-color: #C7D5E2;
+  font-family: "Futura", sans-serif;
 }
 
 hr {
@@ -19,3 +33,7 @@ h2 {
 h3 {
   color: #3F978D;
 }
+
+/* ********** CLASS SELECTORS ********** */
+
+/* ********** ID SELECTORS ********** */
