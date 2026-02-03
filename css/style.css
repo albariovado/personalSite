@@ -23,7 +23,8 @@ body {
   background-color: #C7D5E2;
   font-family: "Futura", sans-serif;
   color: #1a1a1a;
-  line-height: 1.6;
+  line-height: 1.8;
+  font-size: 19px;
 }
 
 
@@ -52,12 +53,14 @@ header {
 h1 {
   margin: 0 0 8px 0;
   color: #183B75;
+  font-size: 2.5rem; /* Circa 47px se la base è 19px */
 }
 
 h2 {
   margin: 0;
   font-weight: 400;
   color: #32637B;
+  font-size: 1.5rem; /* Circa 28px */
 }
 
 h3 {
@@ -65,7 +68,7 @@ h3 {
   color: #3F978D;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: 1.1rem;
+  font-size: 1.2rem; /* Leggermente più grande del tuo precedente 1.1rem */
 }
 
 section p,
