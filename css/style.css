@@ -1,54 +1,119 @@
-/* Site stuffs *
+/* ==============================
+   Site basics
+   ============================== */
+
+/*
 COLORS:
-#C7D5E2
-#737081
-#183B75
-#32637B
-#3F978D
-FONTS:
-font-family: "Futura", sans-serif;
+#C7D5E2  background
+#737081  muted / borders
+#183B75  primary
+#32637B  secondary
+#3F978D  accent
+
+FONT:
+"Futura", sans-serif
 */
 
-/* ********** TAG SELECTORS ********** */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #C7D5E2;
+  font-family: "Futura", sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+
+/* ==============================
+   Layout
+   ============================== */
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
 
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 40px;
   margin-bottom: 80px;
 }
 
-.profile-pic {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 12px;
-}
 
-body {
-  background-color: #C7D5E2;
-  font-family: "Futura", sans-serif;
-}
-
-hr {
-  width: 30%;
-  border-style: none;
-  border-top: 10px dotted #737081;
-}
+/* ==============================
+   Typography
+   ============================== */
 
 h1 {
+  margin: 0 0 8px 0;
   color: #183B75;
 }
 
 h2 {
+  margin: 0;
+  font-weight: 400;
   color: #32637B;
 }
 
 h3 {
+  margin-bottom: 16px;
   color: #3F978D;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 1.1rem;
 }
 
-/* ********** CLASS SELECTORS ********** */
+section p,
+section li {
+  text-align: justify;
+}
 
-/* ********** ID SELECTORS ********** */
+
+/* ==============================
+   Components
+   ============================== */
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+hr {
+  width: 30%;
+  border: none;
+  border-top: 6px dotted #737081;
+  margin: 48px 0;
+}
+
+section a {
+  color: #183B75;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+
+/* ==============================
+   Responsive
+   ============================== */
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-pic {
+    margin-bottom: 16px;
+  }
+}
