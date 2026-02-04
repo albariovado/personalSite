@@ -23,8 +23,21 @@ body {
   background-color: #C7D5E2;
   font-family: "Futura", sans-serif;
   color: #1a1a1a;
-  line-height: 1.8;
-  font-size: 19px;
+  line-height: 1.7;
+  font-size: 20px;
+
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
@@ -33,7 +46,7 @@ body {
    ============================== */
 
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 80px 24px;
 }
@@ -45,6 +58,10 @@ header {
   margin-bottom: 80px;
 }
 
+section {
+  margin-bottom: 72px;
+}
+
 
 /* ==============================
    Typography
@@ -53,27 +70,54 @@ header {
 h1 {
   margin: 0 0 8px 0;
   color: #183B75;
-  font-size: 2.5rem; /* Circa 47px se la base è 19px */
+  font-size: 2.4rem;
 }
 
 h2 {
   margin: 0;
   font-weight: 400;
   color: #32637B;
-  font-size: 1.5rem; /* Circa 28px */
+  font-size: 1.4rem;
 }
 
 h3 {
   margin-bottom: 16px;
   color: #3F978D;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 1.2rem; /* Leggermente più grande del tuo precedente 1.1rem */
+  letter-spacing: 0.06em;
+  font-size: 2.0rem;
 }
 
 section p,
 section li {
-  text-align: left;
+  text-align: justify;
+}
+
+
+/* ==============================
+   Links
+   ============================== */
+
+a {
+  color: #183B75;
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #3F978D;
+  transition: width 0.25s ease;
+}
+
+a:hover::after {
+  width: 100%;
 }
 
 
@@ -82,8 +126,8 @@ section li {
    ============================== */
 
 .profile-pic {
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
   border-radius: 12px;
 }
@@ -95,14 +139,24 @@ hr {
   margin: 48px 0;
 }
 
-section a {
-  color: #183B75;
-  text-decoration: none;
-  font-weight: 500;
+li {
+  padding: 10px 0;
+  transition: transform 0.15s ease;
 }
 
-section a:hover {
-  text-decoration: underline;
+li:hover {
+  transform: translateX(4px);
+}
+
+.separator {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #737081,
+    transparent
+  );
+  margin: 64px 0;
 }
 
 
@@ -111,12 +165,18 @@ section a:hover {
    ============================== */
 
 @media (max-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+
   header {
     flex-direction: column;
     align-items: flex-start;
   }
 
   .profile-pic {
+    width: 160px;
+    height: 160px;
     margin-bottom: 16px;
   }
 }
