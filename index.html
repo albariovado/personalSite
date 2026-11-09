@@ -1,118 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alberto Bario – Ingegnere Chimico</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alberto · Ingegnere impianti rinnovabili</title>
+  <meta name="description" content="Ingegnere: porto impianti fotovoltaici, biogas e biometano dall'idea all'autorizzazione, e sviluppo i miei strumenti di calcolo in Python.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300..700;1,7..72,300..700&family=Instrument+Sans:wght@400..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="container">
-    <header>
-      <!-- FOTO PROFILO -->
-      <img src="img/profile.jpg" alt="Foto di Alberto Bario" class="profile-pic" />
 
-      <div>
-        <h1>Alberto Bario</h1>
-        <h2>Ingegnere Chimico</h2>
-        <h2>Project Manager Energie Rinnovabili</h2>
-      </div>
-    </header>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
 
-    <div class="separator"></div>
+<header class="testata">
+  <a class="sigla" href="#">Alberto <span class="da-completare">Cognome</span></a>
+  <nav aria-label="Sezioni">
+    <a href="#lavoro">Lavoro</a>
+    <a href="#homehub">HomeHub</a>
+    <a href="#percorso">Percorso</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+</header>
 
-    <section>
-      <h3>Profilo</h3>
-      <p>
-        Ingegnere Chimico con esperienza come Project Manager nella progettazione e gestione di impianti per la produzione di energia da fonti rinnovabili.
-        Specializzato in impianti biogas, fotovoltaici e biometano, con competenze consolidate nella gestione degli iter autorizzativi,
-        nelle pratiche GSE e nei rapporti con enti e distributori di rete.
+<main id="contenuto">
+
+  <!-- HERO: impaginato come una tavola di progetto, con il cartiglio -->
+  <section class="hero">
+    <h1>Porto impianti a energia rinnovabile dall'idea all'autorizzazione, e mi costruisco gli strumenti per farlo meglio.</h1>
+
+    <div class="hero-piede">
+      <p class="hero-chi">
+        Sono un ingegnere. Da quasi otto anni seguo impianti fotovoltaici, biogas e biometano per aziende agricole e industrie, dal primo sopralluogo all'allaccio. E programmo: i calcoli che ripeto su ogni impianto li ho trasformati in un'applicazione.
       </p>
-    </section>
 
-    <section>
-      <h3>Competenze</h3>
-      <ul>
-        <li><strong>Pratiche e iter seguiti:</strong>
-          <ul>
-            <li>GSE (Agrisolare, Biogas, Ritiro Dedicato, SIAD)</li>
-            <li>Iter di connessione con e-distribuzione</li>
-            <li>Pratiche edilizie e autorizzative (PAS, AEL, PdC, SCIA, AU)</li>
-            <li>Esame progetto VVF per impianti biogas e biometano</li>
-            <li>Dogane</li>
-            <li>ARERA</li>
-            <li>Iscrizione impianti su GAUDÌ (TERNA)</li>
-          </ul>
+      <table class="cartiglio">
+        <caption>Profilo in sintesi</caption>
+        <tbody>
+          <tr><th scope="row">Settori</th><td>Fotovoltaico, biogas, biometano</td></tr>
+          <tr><th scope="row">Impianti seguiti</th><td>Oltre 60</td></tr>
+          <tr><th scope="row">Fotovoltaico</th><td>15–20 MWp complessivi</td></tr>
+          <tr><th scope="row">Zona</th><td>Canavese, Torino</td></tr>
+          <tr><th scope="row">Strumenti</th><td>Python, AutoCAD</td></tr>
+          <tr class="cartiglio-rev"><th scope="row">Rev.</th><td>novembre 2026</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="azioni">
+      <a class="bottone" href="mailto:nome@esempio.it"><span class="da-completare">Scrivimi</span></a>
+      <a class="link-secondario" href="https://www.linkedin.com/in/DA-COMPLETARE"><span class="da-completare">Profilo LinkedIn</span></a>
+      <!-- Quando il CV è pronto: salvalo come cv.pdf nella cartella del sito e togli il commento.
+      <a class="link-secondario" href="cv.pdf" download>Scarica il CV (PDF)</a>
+      -->
+    </p>
+  </section>
+
+  <!-- COSA FACCIO -->
+  <section class="sezione" id="lavoro" aria-labelledby="t-lavoro">
+    <h2 id="t-lavoro">Cosa faccio</h2>
+
+    <div class="sezione-corpo">
+      <p class="introduzione">
+        Oggi seguo i progetti fotovoltaici dall'inizio alla fine, spesso in siti dove ci sono già altri impianti. Coordino un piccolo team di due persone.
+      </p>
+
+      <dl class="attivita">
+        <div>
+          <dt>Progettazione preliminare</dt>
+          <dd>Sopralluogo, inserimento nel sito, producibilità, configurazione dell'impianto e scelta delle soluzioni insieme al cliente. Poi gli ordini dei materiali e i rapporti con i fornitori.</dd>
+        </div>
+        <div>
+          <dt>Autorizzazioni</dt>
+          <dd>PAS, Autorizzazione Unica provinciale e regionale, pratiche antincendio.</dd>
+        </div>
+        <div>
+          <dt>Connessione alla rete</dt>
+          <dd>Con e-distribuzione: domanda, nuove cabine, servitù, regolamento di esercizio, allaccio. Anche per i cogeneratori biogas e per la loro dismissione negli impianti convertiti a biometano.</dd>
+        </div>
+        <div>
+          <dt>Pratiche GSE</dt>
+          <dd>Agrisolare, Ritiro dedicato, iscrizione ai registri e accesso agli incentivi, decreti FER per il biogas.</dd>
+        </div>
+      </dl>
+
+      <figure class="scala">
+        <figcaption>Taglie degli impianti seguiti, in scala logaritmica</figcaption>
+        <div class="scala-grafico" role="img" aria-label="Fotovoltaico da 50 kWp a 5 MWp, circa 50-60 impianti. Biogas da 100 a 300 kWe, circa 12 impianti.">
+          <div class="scala-riga">
+            <span class="scala-nome">Fotovoltaico <small>circa 50–60 impianti</small></span>
+            <span class="scala-pista"><span class="scala-barra fv" style="--da:23.3%;--a:90%"></span></span>
+          </div>
+          <div class="scala-riga">
+            <span class="scala-nome">Biogas <small>circa 12 impianti</small></span>
+            <span class="scala-pista"><span class="scala-barra bg" style="--da:33.3%;--a:49.2%"></span></span>
+          </div>
+          <div class="scala-riga scala-assi" aria-hidden="true">
+            <span class="scala-nome"></span>
+            <span class="scala-pista">
+              <span style="--x:0%">10 kW</span>
+              <span style="--x:33.3%">100 kW</span>
+              <span style="--x:66.7%">1 MW</span>
+              <span style="--x:100%">10 MW</span>
+            </span>
+          </div>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- HOMEHUB -->
+  <section class="sezione" id="homehub" aria-labelledby="t-homehub">
+    <h2 id="t-homehub">HomeHub</h2>
+
+    <div class="sezione-corpo">
+      <p class="introduzione">
+        Una web app che ho scritto per raccogliere i calcoli che ripeto su ogni impianto. I dati inseriti una volta passano da uno strumento all'altro senza essere ricopiati.
+      </p>
+
+      <ol class="flusso">
+        <li>
+          <div class="flusso-testo">
+            <h3>I dati del sito</h3>
+            <p>Producibilità fotovoltaica con i dati PVGIS, falda per falda. Consumi ricostruiti dalle bollette, anche quando sono incomplete, oppure dalle curve quartorarie di e-distribuzione.</p>
+          </div>
+          <div class="schermata da-completare" role="img" aria-label="Schermata da inserire: producibilità e consumi">Schermata: producibilità e consumi</div>
         </li>
-        <li>Pensiero analitico e capacità di problem solving</li>
-        <li>Comprensione della normativa e applicazione delle procedure in fase di progettazione</li>
-        <li>Lingua inglese: livello B2</li>
-        <li><strong>Programmazione:</strong> Python, Java, C</li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>Esperienza</h3>
-      <p class="meta"><strong>Micropower S.r.l. Unipersonale</strong> – Torino - <a href="http://micro-power.it/">Sito Micropower →</a><br />
-      Project Manager | Febbraio 2019 – presente</p>
-      <ul>
-        <li>Progettazione preliminare di impianti per la produzione di biogas da fonte zootecnica e vegetale agricola</li>
-        <li>Progettazione preliminare di impianti fotovoltaici</li>
-        <li>Progettazione preliminare di impianti di produzione di biometano liquido e gassoso</li>
-        <li>Interfaccia diretta con il cliente e sopralluoghi per una progettazione su misura dell’impianto</li>
-        <li>Inserimento cartografico, posizionamento impianti e calcoli preliminari di progetto</li>
-        <li>Predisposizione di business plan e preventivi</li>
-        <li>Gestione delle pratiche autorizzative edilizie ed esercizio (PdC, SCIA, AEL, PAS, AU)</li>
-        <li>Gestione delle pratiche VVF per impianti biogas e biometano</li>
-        <li>Gestione delle pratiche GSE:
-          <ul>
-            <li>Bando Agrisolare (domanda, inizio lavori, fine lavori e rendicontazione)</li>
-            <li>Biogas (iscrizione a registro e ottenimento incentivi)</li>
-            <li>Ritiro Dedicato</li>
-            <li>Comunicazioni di modifica sul portale SIAD</li>
-          </ul>
+        <li>
+          <div class="flusso-testo">
+            <h3>L'impianto</h3>
+            <p>Elenco dei materiali per fotovoltaico e cogeneratori, configurazione con i controlli lato DC e AC e la distinta, verifica delle stringhe alle temperature del sito.</p>
+          </div>
+          <div class="schermata da-completare" role="img" aria-label="Schermata da inserire: verifica stringhe">Schermata: verifica stringhe</div>
         </li>
-        <li>Gestione delle pratiche di connessione alla rete elettrica (BT e MT) con e-distribuzione</li>
-        <li>Gestione della realizzazione di nuove cabine di connessione (PdC/PAS, SCEA, atti di servitù)</li>
-        <li>Attivazione impianti e registrazione delle nuove UP sul portale GAUDÌ di TERNA</li>
-        <li>Collaborazione alla progettazione di un impianto di degommagio degli oli e di un impianto di trigenerazione per progetto LIFE (UE)</li>
+        <li>
+          <div class="flusso-testo">
+            <h3>I calcoli</h3>
+            <p>Simulazione oraria di autoconsumo, dimensionamento dell'accumulo, analisi economica con tempo di rientro, VAN e TIR.</p>
+          </div>
+          <div class="schermata da-completare" role="img" aria-label="Schermata da inserire: autoconsumo e analisi economica">Schermata: autoconsumo ed economico</div>
+        </li>
+        <li>
+          <div class="flusso-testo">
+            <h3>Le pratiche</h3>
+            <p>Preparazione della domanda di connessione a e-distribuzione e avanzamento di ogni pratica: connessione, Gaudì, GSE. Per i siti con più impianti, una vista d'insieme mostra cosa è completo e cosa manca.</p>
+          </div>
+          <div class="schermata da-completare" role="img" aria-label="Schermata da inserire: avanzamento pratiche">Schermata: avanzamento pratiche</div>
+        </li>
+      </ol>
+
+      <aside class="nota-tecnica" aria-label="Nota tecnica">
+        <h3>Com'è fatta</h3>
+        <p>Python e FastAPI, circa 21.000 righe, con API documentate. Gira in Docker Compose su un server di casa, raggiungibile solo dalla mia rete privata via Tailscale.</p>
+        <p>Non contiene dati dei clienti: un filtro blocca POD, codici fiscali, IBAN, email e numeri di telefono prima che vengano salvati. Le schermate qui sopra usano dati di esempio.</p>
+        <p>Il codice è privato. La mostro volentieri dal vivo.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- PERCORSO -->
+  <section class="sezione" id="percorso" aria-labelledby="t-percorso">
+    <h2 id="t-percorso">Percorso</h2>
+
+    <div class="sezione-corpo">
+      <ol class="percorso">
+        <li>
+          <p class="quando">2022 – oggi</p>
+          <div>
+            <h3>Project Manager</h3>
+            <p class="dove">Micropower S.r.l.</p>
+            <p>Progetti fotovoltaici dall'inizio alla fine, da 50 kWp a 5 MWp. Autorizzazione di un grande impianto di biometano e connessioni per gli impianti biogas convertiti.</p>
+          </div>
+        </li>
+        <li>
+          <p class="quando">2019 – 2022</p>
+          <div>
+            <h3>Ingegnere di progetto</h3>
+            <p class="dove">Micropower S.r.l.</p>
+            <p>Circa 12 impianti biogas da fonte zootecnica e agricola, progettazione preliminare di impianti di biometano, il progetto europeo LIFE su degommaggio degli oli e trigenerazione. Poi i primi impianti fotovoltaici.</p>
+          </div>
+        </li>
+        <li>
+          <p class="quando">2018 – 2019</p>
+          <div>
+            <h3>Amministratore</h3>
+            <p class="dove">Novel Academy, Torino</p>
+            <p>Ho contribuito ad avviare un'accademia d'arte, occupandomi dei conti e della sostenibilità delle attività.</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="sottotitolo">Formazione</h3>
+      <ul class="formazione">
+        <li><strong>Laurea triennale in Informatica</strong>, Università di Torino. In corso, a tempo parziale.</li>
+        <li><strong>Laurea triennale in Ingegneria chimica e alimentare</strong>, Politecnico di Torino, 2019.</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <h3>Formazione</h3>
-      <p class="meta"><strong>Politecnico di Torino</strong><br />
-      Laurea triennale in Ingegneria Chimica e Alimentare | Settembre 2015 – Marzo 2019</p>
-      <p>
-        Percorso formativo orientato allo studio dei processi chimici industriali e,
-        in particolare, dei processi dell’industria alimentare.
-      </p>
-      <p class="meta"><strong>Università di Torino</strong><br />
-      Laurea triennale in Informatica | Settembre 2022 – Presente</p>
-      <p>
-        Percorso formativo intrapreso nel tempo libero per approfondire le mie competenze in ambito informatico e di programmazione.
-        Attualmente iscritto al terzo anno, esami ancora da sostenere 7.
-      </p>
-    </section>
+  <!-- CONTATTI -->
+  <section class="sezione contatti" id="contatti" aria-labelledby="t-contatti">
+    <h2 id="t-contatti">Contatti</h2>
+    <div class="sezione-corpo">
+      <p class="introduzione">Mi interessano i progetti in cui competenza tecnica e strumenti digitali lavorano insieme.</p>
+      <ul class="canali">
+        <li><a href="mailto:nome@esempio.it"><span class="da-completare">nome@esempio.it</span></a></li>
+        <li><a href="https://www.linkedin.com/in/DA-COMPLETARE"><span class="da-completare">linkedin.com/in/…</span></a></li>
+      </ul>
+    </div>
+  </section>
 
-    <div class="separator"></div>
+</main>
 
-    <section>
-      <h3>Progetti</h3>
-      <p>
-      Una selezione di progetti seguiti negli ultimi anni, tra programmazione, elettronica e meccanica.
-      </p>
-      <p>
-      <a href="projects.html">Vai alla pagina dei progetti →</a>
-      </p>
-    </section>
+<footer class="piede">
+  <p>Sito statico, scritto a mano. Aggiornato a novembre 2026.</p>
+</footer>
 
-    <footer>
-      <p>
-        <a href="mailto:albertobario.ab@gmail.com">albertobario.ab@gmail.com</a> ·
-        <a href="https://www.linkedin.com/in/alberto-bario-b22a39148/">LinkedIn</a>
-      </p>
-    </footer>
-  </main>
 </body>
 </html>
